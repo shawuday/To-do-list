@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="top">
+        <img src="checklist.png" alt="checklist-icon">
+    </div>
+   <div class="container">
+        <div class="main-char">
+            <form onsubmit="return false">
+                <div class="track-name main-area">
+                    <label for="NameOfTrack">List Name</label>
+                    <input type="text" id="NameOfTrack" placeholder="What do you want to track?">
+                    <p>Examples: "Groceries", "Project Tasks", etc.</p>
+                </div>
+                <div class="description">
+                    <label for="descript main-area">Description (optional)</label>
+                    <input type="text" id="descript" placeholder="Add a brief description of this list">
+                </div>
+                <div class="create-btn">
+                    <button id="cbtn">Create List</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="add-list-conatainer">
+        <div class="inner-add-list">
+            <div class="tracker">
+                <h2 id="list-name">Uday</h2>
+                <span class="track">0 total</span>
+                <span class="track">0 done</span>
+                <span class="track">0 pending</span>
+            </div>
+            <div class="adding">
+                <input type="text" placeholder="add a new task...">
+                <button id="addbtn">Add</button>
+            </div>
+                <div class="added-task">
+                    
+                </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

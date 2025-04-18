@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FBF5DD;
+}
+img{
+    height: 80px;
+    width: 100px;
+    padding: 16px;
+    background-size: cover;
+}
+.container{
+    /* display: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-char{
+    background-color: #A6CDC6;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    border-radius: 35px;
+    align-items: center;
+}
+form{
+    display: flex;
+    height: 65vh;
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px;
+    color: #034C53;
+    font-size: 1.5em;
+}
+.track-name p{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    display: block;
+    width: 70vh;
+    font-size: 20px;
+    height: 10vmin;
+    background-color: #F7CFD8;
+    border-radius: 10px;
+    padding-left: 15px;
+
+}
+input::-webkit-input-placeholder{
+    font-size: 14px;
+}
+.main-area{
+    margin-bottom: 50px;
+}
+.create-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    height: 30px;
+}
+.create-btn button{
+    border-radius: 10px;
+    padding: 0PX 15px;
+    background-color: #DDA853;
+
+}
+.first-box{
+    height: 87;
+}
+
+/* add-list container  */
+.add-list-conatainer{
+    display: none;
+    height: 80vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #034C53; */
+}
+.inner-add-list{
+    width: 75%;
+    height: 65vh;
+    background-color: #A6CDC6;
+    border-radius: 10px;
+}
+.tracker{
+    /* background-color: aqua; */
+    height: 10vmin;
+    margin: 20px 20px 0px 20px;
+}
+.track{
+    border: 0.5px solid black;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+.adding input{
+    display: inline-block;
+    width: 70%;
+    margin: 25px;
+}
+.adding button{
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #DDA853;
+}
