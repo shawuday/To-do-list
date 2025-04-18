@@ -4,9 +4,9 @@ let add=document.querySelector(".add-list-conatainer");
 let listName=document.querySelector("#NameOfTrack");
 let naam=document.getElementById("list-name");
 let addbtn=document.getElementById("addbtn");
-let
 
-// naam.innerText="listName.value";
+
+
 
 cbtn.addEventListener("click",()=>{
   cnt.style.display = "none";
@@ -16,4 +16,3 @@ cbtn.addEventListener("click",()=>{
 
 
 
-// console.log();
