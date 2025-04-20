@@ -38,7 +38,7 @@ form{
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-input{
+.main-char input{
     display: block;
     width: 70vh;
     font-size: 20px;
@@ -73,7 +73,7 @@ input::-webkit-input-placeholder{
 /* add-list container  */
 .add-list-conatainer{
     display: none;
-    height: 80vh;
+    /* height: 100vh; */
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ input::-webkit-input-placeholder{
 }
 .inner-add-list{
     width: 75%;
-    height: 65vh;
+    height: 100%;
     background-color: #A6CDC6;
     border-radius: 10px;
 }
@@ -89,6 +89,9 @@ input::-webkit-input-placeholder{
     /* background-color: aqua; */
     height: 10vmin;
     margin: 20px 20px 0px 20px;
+}
+#list-name{
+    margin-bottom: 8px;
 }
 .track{
     border: 0.5px solid black;
@@ -101,10 +104,27 @@ input::-webkit-input-placeholder{
     display: inline-block;
     width: 70%;
     margin: 25px;
+    /* display: block; */
+    /* width: 70vh; */
+    font-size: 20px;
+    height: 10vmin;
+    background-color: #F7CFD8;
+    border-radius: 10px;
+    padding-left: 15px;
 }
 .adding button{
     font-size: 15px;
     padding: 8px;
     border-radius: 10px;
     background-color: #DDA853;
+}
+#addtask{
+    font-size: 25px;
+    /* transform: scale(1.5); */
+    /* transform-origin: left center;  */
+    vertical-align: middle;       
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }

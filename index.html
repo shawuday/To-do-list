@@ -32,16 +32,23 @@
         <div class="inner-add-list">
             <div class="tracker">
                 <h2 id="list-name">Uday</h2>
-                <span class="track">0 total</span>
-                <span class="track">0 done</span>
-                <span class="track">0 pending</span>
+                <span class="track" id="total">0 total</span>
+                <span class="track" id="completed">0 done</span>
+                <span class="track" id="pending">0 pending</span>
             </div>
             <div class="adding">
-                <input type="text" placeholder="add a new task...">
+                <input type="text" id="addvalue" placeholder="add a new task...">
                 <button id="addbtn">Add</button>
             </div>
-                <div class="added-task">
-                    
+                <div class="added-task" id="addtask">
+                    <div class="cont">
+                        <input type="checkbox" id="checking">
+                        <label for="checking">uday</label>
+                    </div>
+                    <div class="cont">
+                        <input type="checkbox" id="checking">
+                        <label for="checking">uday</label>
+                    </div>
                 </div>
         </div>
     </div>
