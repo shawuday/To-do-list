@@ -11,6 +11,10 @@ img{
     padding: 16px;
     background-size: cover;
 }
+.top h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
 .container{
     /* display: none; */
     display: flex;
