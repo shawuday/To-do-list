@@ -77,11 +77,8 @@ input::-webkit-input-placeholder{
 /* add-list container  */
 .add-list-conatainer{
     display: none;
-    /* height: 100vh; */
-    /* display: flex; */
     justify-content: center;
     align-items: center;
-    /* background-color: #034C53; */
 }
 .inner-add-list{
     width: 75%;
@@ -90,7 +87,6 @@ input::-webkit-input-placeholder{
     border-radius: 10px;
 }
 .tracker{
-    /* background-color: aqua; */
     height: 10vmin;
     margin: 20px 20px 0px 20px;
 }
@@ -108,8 +104,6 @@ input::-webkit-input-placeholder{
     display: inline-block;
     width: 70%;
     margin: 25px;
-    /* display: block; */
-    /* width: 70vh; */
     font-size: 20px;
     height: 10vmin;
     background-color: #F7CFD8;
@@ -124,11 +118,25 @@ input::-webkit-input-placeholder{
 }
 #addtask{
     font-size: 25px;
-    /* transform: scale(1.5); */
-    /* transform-origin: left center;  */
     vertical-align: middle;       
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
+
+.deleteBtn {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight:800;
+  }
+  .div-container{
+    border-bottom: 0.1px solid rgb(243, 239, 239);
+  }

@@ -36,9 +36,15 @@ addbtn.addEventListener("click", () => {
     checkboxes.className = "myCheckbox";
     let lab = document.createElement("lable");
     lab.innerText = " " + addvalue.value;
+    let delBtn=document.createElement("button");
+    delBtn.innerText="🗑";
+    delBtn.className = "deleteBtn";
+
     let contains = document.createElement("div");
+    contains.className = "div-container";
     contains.appendChild(checkboxes);
     contains.appendChild(lab);
+    contains.appendChild(delBtn);
     task.appendChild(contains);
     inputvalue.value = "";
     count += 1;
@@ -47,12 +53,26 @@ addbtn.addEventListener("click", () => {
     alert("Please enter something!");
   }
   tota.innerText = count + " total";
-  //   pending.innerText=(count-completed)+" pending";
-  //   // updateLocalStorage();
-  // console.log("adding section is working");
 });
 
+task.addEventListener("click", (event)=>{
+  if(event.target && event.target.classList.contains("deleteBtn")){
+    const containerDiv = event.target.parentElement;
+    const checkbox = containerDiv.querySelector("input[type='checkbox']");
+    if (checkbox.checked) {
+      completed--;
+    }
+    count--;
 
+    containerDiv.remove(); // 🗑 Remove the div
+
+    tota.innerText = count + " total";
+    done.innerText = completed + " done";
+    pending.innerText = (count - completed) + " pending";
+
+    updateLocalStorage(); // update local storage after deletion
+  }
+});
 
 
 task.addEventListener("change", (event) => {
@@ -101,12 +121,17 @@ window.addEventListener("DOMContentLoaded", () => {
     checkboxes.className = "myCheckbox";
     checkboxes.checked = item.checked;
 
+    let delBtn=document.createElement("button");
+    delBtn.className="deleteBtn";
+    delBtn.innerText="🗑";
+
     let lab = document.createElement("label");
     lab.innerText = " " + item.name;
 
     let contains = document.createElement("div");
     contains.appendChild(checkboxes);
     contains.appendChild(lab);
+    contains.appendChild(delBtn);
     task.appendChild(contains);
   });
 
